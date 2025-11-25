@@ -30,7 +30,7 @@
     padding: 12px 20px;
     border-radius: 6px;
     font-weight: bold;
-    margin-top: 20px;
+    margin: 20px 0;
   }
   .video-preview {
     position: relative;
@@ -89,13 +89,17 @@
     cursor: pointer;
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   }
+  .signature {
+    margin-top: 20px;
+    font-weight: bold;
+  }
 </style>
 </head>
 <body>
 
 <div class="container">
-  <h1>Hi John,</h1>
-  <p>I’m <strong>Coach P</strong>, your personal business guide powered by Purple Squirrel AI. You’re here because you want to build something of your own—and I’m here to walk you through it, step by step.</p>
+  <h1>Hi [Name],</h1>
+  <p>I’m <strong>Coach P</strong>, your personal business guide powered by Purple Squirrel AI. You’re here because you want to build something of your own—and I’m here to walk you through it, [...]</p>
 
   <!-- Video preview at the top -->
   <div class="video-preview" onclick="openModal()">
@@ -117,9 +121,11 @@
   </ul>
 
   <p>You can get started for free today:</p>
-  <a class="button" href="https://www.getpurplesquirrel.com/" target="_blank" rel="noopener noreferrer">Get Started</a>
+  <a class="button" href="https://www.getpurplesquirrel.com/" target="_blank" rel="noopener noreferrer">Continue</a>
 
   <p>I’m excited to help you turn your ideas into a thriving business. Let’s make something amazing… together.</p>
+
+  <p class="signature">Peace, <br>Coach P ✌️</p>
 </div>
 
 <!-- Modal overlay -->
