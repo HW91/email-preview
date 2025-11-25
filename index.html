@@ -1,149 +1,97 @@
-<!-- Replace thumbnails and links as needed. -->
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Welcome — Coach P</title>
-  <style>
-    /* Basic, email-friendly inline styles for container */
-    body { font-family: Arial, Helvetica, sans-serif; margin:0; padding:0; background:#f6f7fb; color:#111; }
-    .wrapper { max-width:680px; margin:28px auto; background:#ffffff; border-radius:8px; overflow:hidden; box-shadow:0 6px 24px rgba(22,28,37,0.08); }
-    .content { padding:24px; line-height:1.5; color:#1b1b1b; }
-    h1 { font-size:20px; margin:0 0 12px 0; }
-    p { margin:10px 0; }
-    .cta { display:inline-block; padding:12px 18px; background:#6a3dd5; color:#fff; text-decoration:none; border-radius:6px; font-weight:600; }
-    /* video thumbnail block */
-    .video-wrap { position:relative; width:100%; background:#000; overflow:hidden; }
-    .thumbnail { width:100%; display:block; height:auto; }
-    .play-button {
-      position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
-      width:84px; height:84px; border-radius:50%; background:rgba(106,61,213,0.92); display:flex; align-items:center; justify-content:center;
-      box-shadow:0 8px 30px rgba(106,61,213,0.28);
-      cursor:pointer;
-    }
-    .play-button:after {
-      content:''; display:block; margin-left:6px;
-      width:0; height:0; border-left:18px solid #fff; border-top:11px solid transparent; border-bottom:11px solid transparent;
-    }
-    .caption { padding:12px 0 0 0; color:#555; font-size:13px; }
-    /* modal */
-    .modal { display:none; position:fixed; z-index:2000; left:0; top:0; width:100%; height:100%; background:rgba(7,8,10,0.7); align-items:center; justify-content:center; padding:20px; }
-    .modal.open { display:flex; }
-    .modal-card { width:100%; max-width:980px; background:#000; border-radius:10px; overflow:hidden; box-shadow:0 18px 60px rgba(2,6,23,0.6); }
-    .modal video { width:100%; height:auto; display:block; background:#000; }
-    .modal-close { position:absolute; right:22px; top:22px; width:44px; height:44px; border-radius:8px; background:rgba(255,255,255,0.08); color:#fff; display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:20px; }
-    /* small print */
-    .footer { padding:18px 24px; font-size:12px; color:#666; border-top:1px solid #f0f0f3; background:#fbfbfd; }
-    a.link { color:#6a3dd5; text-decoration:none; }
-    @media (max-width:480px){
-      .content { padding:16px; }
-      .play-button { width:72px; height:72px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Purple Squirrel AI</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    max-width: 700px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  h1 {
+    color: #6a0dad;
+  }
+  p {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  ul {
+    margin: 15px 0;
+    padding-left: 20px;
+  }
+  a.button {
+    display: inline-block;
+    background-color: #6a0dad;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .video-preview {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .video-preview img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .video-preview::after {
+    content: '▶';
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+</style>
 </head>
 <body>
-  <div class="wrapper" role="article" aria-labelledby="welcomeTitle">
-    <div class="content">
-      <h1 id="welcomeTitle">Hi <span id="recipientName">[Name]</span>, welcome.</h1>
 
-      <p>
-        I’m <strong>Coach P</strong>, your personal business guide powered by Purple Squirrel AI. You’re here because you want to build something of your own, and I’ll walk you through it step by step.
-      </p>
+<div class="container">
+  <h1>Hi [Name],</h1>
+  <p>I’m <strong>Coach P</strong>, your personal business guide powered by Purple Squirrel AI. You’re here because you want to build something of your own—and I’m here to walk you through it, step by step.</p>
 
-      <!-- Video preview block -->
-      <div class="video-wrap" aria-hidden="false">
-        <!-- Replace the src below with a thumbnail image URL for best results. -->
-        <img
-          class="thumbnail"
-          id="videoThumbnail"
-          src="https://workdrive.zohoexternal.com/file/tkq6zb2d282044f0640aaa3305c04c6707cc5"
-          alt="Play Welcome Video — Coach P"
-        />
+  <p>Here’s what we’ll do together:</p>
+  <ul>
+    <li><strong>Define your idea & goals</strong> – Clarify what you want to build and who you serve.</li>
+    <li><strong>Validate your business</strong> – Test your idea with real customers.</li>
+    <li><strong>Build your foundation</strong> – Set up your business structure, brand, and tools.</li>
+    <li><strong>Create your offers</strong> – Make your products or services irresistible.</li>
+    <li><strong>Build your online presence</strong> – Websites, profiles, content, all done right.</li>
+    <li><strong>Get your first customers</strong> – Marketing that actually works.</li>
+    <li><strong>Automate your work</strong> – Use AI to save hours every week.</li>
+    <li><strong>Delight your customers</strong> – Keep them coming back and referring others.</li>
+    <li><strong>Scale & grow</strong> – Expand revenue and reach.</li>
+    <li><strong>Track progress & improve</strong> – Stay on course with smart dashboards.</li>
+  </ul>
 
-        <div class="play-button" id="playBtn" role="button" aria-label="Play welcome video"></div>
+  <p>You can get started for free today:</p>
+  <a class="button" href="https://www.getpurplesquirrel.com/" target="_blank">Get Started</a>
 
-        <div class="caption">Welcome video: Click the image to watch a short walkthrough of the program.</div>
-      </div>
+  <p>I’m excited to help you turn your ideas into a thriving business. Let’s make something amazing… together.</p>
 
-      <p style="margin-top:18px; font-weight:600;">Here’s what we’ll do together:</p>
+  <!-- Video preview -->
+  <a class="video-preview" href="https://youtu.be/r0fdY363yIw" target="_blank">
+    <img src="https://workdrive.zohoexternal.com/file/tkq6zb2d282044f0640aaa3305c04c6707cc5" alt="Watch Welcome Video">
+  </a>
+</div>
 
-      <ol>
-        <li><strong>Define your idea & goals</strong> – Clarify what you want to build and who you serve.</li>
-        <li><strong>Validate your business</strong> – Test your idea with real customers.</li>
-        <li><strong>Build your foundation</strong> – Set up your business structure, brand, and tools.</li>
-        <li><strong>Create your offers</strong> – Make products or services irresistible.</li>
-        <li><strong>Build your online presence</strong> – Websites, profiles, and content done right.</li>
-        <li><strong>Get your first customers</strong> – Marketing that actually works.</li>
-        <li><strong>Automate your work</strong> – Use AI to save hours every week.</li>
-        <li><strong>Delight your customers</strong> – Keep them coming back and referring others.</li>
-        <li><strong>Scale & grow</strong> – Expand revenue and reach.</li>
-        <li><strong>Track progress & improve</strong> – Stay on course with smart dashboards.</li>
-      </ol>
-
-      <p style="margin-top:14px;">
-        Start for free now:
-        <a class="cta" href="https://www.getpurplesquirrel.com/" target="_blank" rel="noopener">Get started</a>
-      </p>
-
-      <p style="margin-top:10px; color:#444;">
-        I’m excited to help you turn your ideas into a thriving business. Let’s make something amazing together.
-      </p>
-
-      <p style="margin-top:18px; font-weight:700;">Coach P<br><span style="font-weight:400;">Your AI Business Coach</span></p>
-    </div>
-
-    <div class="footer">
-      <div>Can’t play the video here? <a class="link" href="https://workdrive.zohoexternal.com/file/tkq6zb2d282044f0640aaa3305c04c6707cc5" target="_blank" rel="noopener">Watch the welcome video on this page</a>.</div>
-      <div style="margin-top:8px;">Manage your account at <a class="link" href="https://www.getpurplesquirrel.com/" target="_blank" rel="noopener">getpurplesquirrel.com</a>.</div>
-    </div>
-  </div>
-
-  <!-- Modal player (works in browsers; most email clients block JS) -->
-  <div id="videoModal" class="modal" aria-hidden="true">
-    <div class="modal-card" role="dialog" aria-modal="true" aria-label="Welcome video player">
-      <video id="modalVideo" controls preload="metadata">
-        <!-- Replace the src below with a direct mp4 URL if required -->
-        <source src="https://workdrive.zohoexternal.com/file/tkq6zb2d282044f0640aaa3305c04c6707cc5" type="video/mp4">
-        Your browser does not support embedded video. Use the link to watch the video instead.
-      </video>
-    </div>
-    <div class="modal-close" id="modalClose" title="Close">✕</div>
-  </div>
-
-  <script>
-    (function(){
-      var play = document.getElementById('playBtn');
-      var modal = document.getElementById('videoModal');
-      var closeBtn = document.getElementById('modalClose');
-      var video = document.getElementById('modalVideo');
-
-      function openModal(e){
-        e && e.preventDefault && e.preventDefault();
-        // set aria
-        modal.classList.add('open');
-        modal.setAttribute('aria-hidden','false');
-        // play video
-        try { video.currentTime = 0; video.play(); } catch(err) { /* ignore playback errors */ }
-      }
-      function closeModal(e){
-        e && e.preventDefault && e.preventDefault();
-        modal.classList.remove('open');
-        modal.setAttribute('aria-hidden','true');
-        try { video.pause(); video.currentTime = 0; } catch(err) {}
-      }
-
-      if(play) play.addEventListener('click', openModal);
-      if(closeBtn) closeBtn.addEventListener('click', closeModal);
-      // close when clicking outside modal-card
-      modal.addEventListener('click', function(ev){
-        if(ev.target === modal) closeModal(ev);
-      });
-      // keyboard escape
-      document.addEventListener('keydown', function(ev){
-        if(ev.key === 'Escape' && modal.classList.contains('open')) closeModal(ev);
-      });
-    })();
-  </script>
 </body>
 </html>
