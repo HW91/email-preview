@@ -61,6 +61,16 @@
     pointer-events: none;
   }
 </style>
+<script>
+function openVideoPopup(url) {
+  var width = 800;
+  var height = 450;
+  var left = (screen.width / 2) - (width / 2);
+  var top = (screen.height / 2) - (height / 2);
+  window.open(url, "VideoPopup", "width=" + width + ",height=" + height + ",top=" + top + ",left=" + left + ",resizable=yes,scrollbars=no");
+  return false;
+}
+</script>
 </head>
 <body>
 
@@ -87,9 +97,9 @@
 
   <p>I’m excited to help you turn your ideas into a thriving business. Let’s make something amazing… together.</p>
 
-  <!-- Video preview -->
-  <a class="video-preview" href="https://youtu.be/r0fdY363yIw" target="_blank">
-    <img src="https://workdrive.zohoexternal.com/file/tkq6zb2d282044f0640aaa3305c04c6707cc5" alt="Watch Welcome Video">
+  <!-- Video preview with popup -->
+  <a class="video-preview" href="#" onclick="return openVideoPopup('https://www.youtube.com/watch?v=r0fdY363yIw');">
+    <img src="https://raw.githubusercontent.com/HW91/email-preview/main/thumbnail.jpg" alt="Watch Welcome Video">
   </a>
 </div>
 
